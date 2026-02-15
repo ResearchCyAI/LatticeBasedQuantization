@@ -1,0 +1,71 @@
+# Git attributes for COSET project
+# Ensures proper handling of different file types
+
+# Text files
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.tsv text eol=lf
+
+# Binary files (should not be tracked)
+*.pth binary
+*.pt binary
+*.pkl binary
+*.pickle binary
+*.joblib binary
+*.model binary
+*.weights binary
+*.ckpt binary
+*.checkpoint binary
+*.safetensors binary
+*.bin binary
+*.h5 binary
+*.hdf5 binary
+*.npy binary
+*.npz binary
+*.mat binary
+*.wav binary
+*.mp3 binary
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.bmp binary
+*.tiff binary
+*.tif binary
+*.svg binary
+*.pdf binary
+*.zip binary
+*.tar binary
+*.tar.gz binary
+*.rar binary
+*.7z binary
+
+# Large files (use Git LFS if needed)
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.safetensors filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.hdf5 filter=lfs diff=lfs merge=lfs -text
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
+
+# Documentation
+*.md linguist-documentation
+*.rst linguist-documentation
+*.txt linguist-documentation
+
+# Examples and tests
+examples/** linguist-documentation
+tests/** linguist-documentation
