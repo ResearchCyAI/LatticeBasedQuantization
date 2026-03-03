@@ -15,7 +15,7 @@ Repository for quantization and QAT experiments.
 
 - Python 3.x
 - PyTorch, transformers, pandas, numpy, scikit-learn
-- `coset` (E8/lattice quantization)
+- `coset` (Lattice quantization)
 
 ## Data
 
